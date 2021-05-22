@@ -17,13 +17,10 @@ namespace ProceduralObjectPlacement
 
         public void Start()
         {
-            Console.WriteLine("Algorithm starting...");
-            
             foreach (Node node in render.nodes)
             {
                 if (node.type == "UnCalculated")
                 {
-                    Console.WriteLine("Uncalculated node!");
                     StartCalculating(node);
                     break;
                 }
